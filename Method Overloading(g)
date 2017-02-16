@@ -3,3 +3,28 @@ Or aleast the sequence of the arguments should be different.
 Method Overloading means to have two or more methods with same name in the same class with different arguments. 
 The benefit of method overloading is that it allows you to implement methods that support the same operation 
 but differ by argument number or type.
+
+import java.util.Scanner;
+
+public class acad {
+	public static int sum(int a , int b)
+    {
+		return a+b; 
+    }
+    public static int  sum(char c)  
+    {
+    	int n =(int)c;
+         return n;
+    }
+	
+	public static void main(String args[])
+	{
+		Scanner sc= new Scanner(System.in);
+		
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		System.out.println("output");
+		System.out.println(sum(a,b));//integer type as input
+		System.out.println(sum('a'));//	char type as input
+		}
+	}
